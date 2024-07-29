@@ -9,46 +9,63 @@ Preprocessing
   Convert text to lowercase
   Remove newlines and non-word characters
   Remove extra spaces
+  
 Tokenization and Stopword Removal
   Tokenize the text into words
   Remove English stopwords
+  
 Stemming and Lemmatization
   Apply PorterStemmer for stemming
   Apply WordNetLemmatizer for lemmatization
+  
 Model Loading and Prediction
+
   Models Used
     BERT: bert-large-uncased-whole-word-masking-finetuned-squad
     GPT-2: gpt2
     T5: t5-small
+    
 Prediction Functions
+
   BERT: For question answering using context
   GPT-2: For text generation based on the question
   T5: For question answering using context
+  
 Evaluation Metrics
+
   Metrics Used
+  
     ROUGE: Measures overlap between predicted and reference text
     BLEU: Measures n-gram precision with brevity penalty
     F1-Score: Measures token overlap with precision and recall
+    
 Results Summary
+
   BERT:
     ROUGE-1: 0.198, ROUGE-2: 0.107, ROUGE-L: 0.192
     BLEU: Very low due to brevity penalty
     F1: 0.197
+    
   GPT-2:
     ROUGE-1: 0.160, ROUGE-2: 0.039, ROUGE-L: 0.110
     BLEU: Slightly better than BERT but still low
     F1: 0.156
+    
   T5:
     ROUGE-1: 0.415, ROUGE-2: 0.233, ROUGE-L: 0.416
     BLEU: Very low due to brevity penalty
     F1: 0.416
 
 Visualizations
+
   Data Distribution
     Distribution of question and answer lengths
+    
   Feature Importance
     Top 20 important features for answer length prediction using a Random Forest classifier
+    
   Model Performance
+  
     ROUGE scores comparison
     F1 scores comparison
 
